@@ -1,9 +1,9 @@
 import "./App.css";
-import JokeList from "./JokeList";
+import JokeListComp from "./JokeListComp";
 function App() {
 	return (
 		<div className="App">
-			<JokeList />
+			<JokeListComp />
 		</div>
 	);
 }
