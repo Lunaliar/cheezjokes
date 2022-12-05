@@ -57,6 +57,27 @@
 	border-radius: 50%;
 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 43rem) {
+	.Joke {
+		padding: 1rem 1.5rem;
+	}
+	.Joke-text {
+		font-size: 1.2rem;
+	}
+	.fa-arrow-up,
+	.fa-arrow-down {
+		font-size: 1.8rem;
+	}
+	.Joke-smiley {
+		font-size: 1.5rem;
+	}
+	.Joke-votes {
+		font-size: 1.9rem;
+		min-width: 2.5rem;
+		min-height: 2.5rem;
+		line-height: 2.5rem;
+	}
+}
 
 @keyframes move-up {
 	0%,

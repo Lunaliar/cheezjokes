@@ -1,10 +1,8 @@
 .JokeList {
 	display: flex;
 	max-width: 80vw;
-
 	height: 80vh;
 }
-
 .JokeList-sidebar {
 	background: #9575cd;
 	display: flex;
@@ -32,7 +30,7 @@
 }
 
 .JokeList-sidebar img {
-	width: 50%;
+	width: 5rem;
 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 }
@@ -88,6 +86,32 @@
 	transform: translateY(-2px);
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 	color: gray;
+}
+@media screen and (max-width: 43rem) {
+	html {
+		font-size: 10px;
+	}
+	.JokeList {
+		flex-direction: column;
+		min-width: 100%;
+		min-height: 100vh;
+	}
+	.JokeList-title {
+		font-size: 2.5rem;
+	}
+	.JokeList-sidebar {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		min-width: 100%;
+	}
+	.JokeList-getmore {
+		font-size: 1.4rem;
+		max-width: 25%;
+	}
+	.JokeList-jokes {
+		min-width: 100%;
+	}
 }
 
 @keyframes shake-slow {
