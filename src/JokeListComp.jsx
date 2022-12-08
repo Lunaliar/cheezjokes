@@ -3,6 +3,7 @@ import React, {useEffect, useState} from "react";
 import {v4 as uuidv4} from "uuid";
 import JokeComp from "./JokeComp";
 import "./JokeList.css";
+import "./Joke.css";
 
 const numJokesToGet = 10;
 const JokeListComp = () => {
@@ -70,6 +71,7 @@ const JokeListComp = () => {
 						<h1 className="JokeList-title">
 							<span>Dad</span> Jokes
 						</h1>
+
 						<img
 							src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg"
 							alt="face"
@@ -79,6 +81,12 @@ const JokeListComp = () => {
 						</button>
 					</div>
 					<div className="JokeList-jokes">
+						<p
+							style={{paddingLeft: "2rem", fontSize: ".7rem"}}
+							className="Joke"
+						>
+							<a href="https://savcodes.dev">Sav Costabile</a> Ⓒ 2022
+						</p>
 						{jokes.map((j) => {
 							return (
 								<JokeComp
