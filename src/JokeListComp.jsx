@@ -81,12 +81,6 @@ const JokeListComp = () => {
 						</button>
 					</div>
 					<div className="JokeList-jokes">
-						<p
-							style={{paddingLeft: "2rem", fontSize: ".7rem"}}
-							className="Joke"
-						>
-							<a href="https://savcodes.dev">Sav Costabile</a> Ⓒ 2022
-						</p>
 						{jokes.map((j) => {
 							return (
 								<JokeComp
