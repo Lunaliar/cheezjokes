@@ -1,125 +1,125 @@
 .Joke {
-	display: flex;
-	border-bottom: 2px solid #eeeeee;
-	align-items: center;
-	justify-content: center;
-	font-weight: 400;
-	padding: 1rem;
+  display: flex;
+  border-bottom: 2px solid #eeeeee;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  padding: 1rem;
 }
 
 .Joke-buttons {
-	display: flex;
-	margin-right: 1rem;
-	align-items: center;
-	justify-content: center;
-	width: 15%;
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
 }
 
 .Joke-text {
-	width: 75%;
-	font-size: 0.5rem;
+  width: 75%;
+  font-size: 0.5rem;
 }
 
 .Joke-votes {
-	min-width: 1.4rem;
-	min-height: 1.4rem;
-	line-height: 1.4rem;
-	border-radius: 50%;
-	border: 2px solid red;
-	text-align: center;
-	font-size: 0.75rem;
-	font-weight: 300;
-	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.1);
+  min-width: 1.4rem;
+  min-height: 1.4rem;
+  line-height: 1.4rem;
+  border-radius: 50%;
+  border: 2px solid red;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 300;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.1);
 }
 
 .fa-arrow-up,
 .fa-arrow-down {
-	font-size: 1rem;
-	margin: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem;
 
-	cursor: pointer;
-	transition: 0.3s;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .fa-arrow-up:hover {
-	animation: move-up 0.7s ease-out;
-	color: green;
+  animation: move-up 0.7s ease-out;
+  color: green;
 }
 
 .fa-arrow-down:hover {
-	animation: move-down 0.7s ease-out;
-	color: red;
+  animation: move-down 0.7s ease-out;
+  color: red;
 }
 
 .Joke-smiley {
-	font-size: 1.2rem;
-	margin-left: auto;
-	border-radius: 50%;
-	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  margin-left: auto;
+  border-radius: 50%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 43rem) {
-	.Joke {
-		padding: 1rem 1.5rem;
-	}
-	.Joke-text {
-		font-size: 1.2rem;
-	}
-	.fa-arrow-up,
-	.fa-arrow-down {
-		font-size: 1.8rem;
-	}
-	.Joke-smiley {
-		font-size: 1.5rem;
-	}
-	.Joke-votes {
-		font-size: 1.9rem;
-		min-width: 2.5rem;
-		min-height: 2.5rem;
-		line-height: 2.5rem;
-	}
+  .Joke {
+    padding: 1rem 1.5rem;
+  }
+  .Joke-text {
+    font-size: 1.2rem;
+  }
+  .fa-arrow-up,
+  .fa-arrow-down {
+    font-size: 1.8rem;
+  }
+  .Joke-smiley {
+    font-size: 1.5rem;
+  }
+  .Joke-votes {
+    font-size: 1.9rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    line-height: 2.5rem;
+  }
 }
 
 @keyframes move-up {
-	0%,
-	50%,
-	100% {
-		transform: translateY(0);
-	}
-	25%,
-	75% {
-		transform: translateY(-3px);
-	}
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  25%,
+  75% {
+    transform: translateY(-3px);
+  }
 }
 @keyframes move-down {
-	0%,
-	50%,
-	100% {
-		transform: translateY(0);
-	}
-	25%,
-	75% {
-		transform: translateY(3px);
-	}
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  25%,
+  75% {
+    transform: translateY(3px);
+  }
 }
 
 .Joke-smiley:hover {
-	animation: spin 0.7s ease-in-out 0s;
+  animation: spin 0.7s ease-in-out 0s;
 }
 
 @keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-	30% {
-		transform: rotate(20deg);
-	}
-	60% {
-		transform: rotate(0deg);
-	}
-	80% {
-		transform: rotate(10deg);
-	}
-	100% {
-		transform: rotate(0deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
