@@ -1,6 +1,8 @@
 # Dad Joke Generator
 
-This was my very first react app. And while it might not be the most impressive of my collection I think it's one of the more useful ones and a great way to show off my skills to those who may not have interest or knowledge of web developement. This was also a little tricky to get off the ground as I also wanted it to have local storage functionality so users can track which jokes they enjoy the most. All in all a very fun project and worth every hour and minute of development.
+This is my Dad Joke Generator. I made it during a Colt Steele Udemy course on reacting. It was my first time making a react app, and it is still one of my favorite things I've ever made. Once I got more comfortable with react, I refactored it from class to functional components. 
+Warning! Use caution when sharing these jokes; they can be very "d[e]adly."
+
 
 # Getting Started with Create React App
 
