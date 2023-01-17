@@ -1,11 +1,12 @@
 import axios from "axios"
 import React, { useEffect, useState } from "react"
 import { v4 as uuidv4 } from "uuid"
-import JokeComp from "./JokeComp"
+import Joke from "./Joke"
 import "./JokeList.css"
 import "./Joke.css"
 
 const numJokesToGet = 10
+
 const JokeListComp = () => {
   const [jokes, setJokes] = useState(
     JSON.parse(window.localStorage.getItem("jokes") || "[]")
@@ -35,11 +36,8 @@ const JokeListComp = () => {
 
   useEffect(() => {
     const unsub = () => {
-      if (jokes.length === 0) {
-        getJokes()
-      }
+      jokes.length === 0 && getJokes()
     }
-
     return unsub()
   }, [])
 
@@ -81,17 +79,15 @@ const JokeListComp = () => {
             </button>
           </div>
           <div className="JokeList-jokes">
-            {jokes.map(j => {
-              return (
-                <JokeComp
-                  key={j.id}
-                  text={j.text}
-                  votes={j.votes}
-                  upvote={() => handleVote(j.id, 1)}
-                  downvote={() => handleVote(j.id, -1)}
-                />
-              )
-            })}
+            {jokes.map(j => (
+              <Joke
+                key={j.id}
+                text={j.text}
+                votes={j.votes}
+                upvote={() => handleVote(j.id, 1)}
+                downvote={() => handleVote(j.id, -1)}
+              />
+            ))}
           </div>
         </div>
       )}

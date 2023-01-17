@@ -1,9 +1,9 @@
 import "./App.css"
-import JokeListComp from "./JokeListComp"
+import JokeList from "./JokeList"
 function App() {
   return (
     <div className="App">
-      <JokeListComp />
+      <JokeList />
       <p className="credits">
         <a href="https://savcodes.dev">Sav Costabile</a> Ⓒ 2022
       </p>

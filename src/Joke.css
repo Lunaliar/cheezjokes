@@ -17,7 +17,7 @@
 
 .Joke-text {
   width: 75%;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 
 .Joke-votes {
@@ -78,7 +78,27 @@
     line-height: 2.5rem;
   }
 }
-
+@media screen and (max-width: 78rem) {
+  .Joke {
+    padding: 1rem 1.5rem;
+  }
+  .Joke-text {
+    font-size: 1.4rem;
+  }
+  .fa-arrow-up,
+  .fa-arrow-down {
+    font-size: 1.8rem;
+  }
+  .Joke-smiley {
+    font-size: 1.5rem;
+  }
+  .Joke-votes {
+    font-size: 1.9rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
 @keyframes move-up {
   0%,
   50%,

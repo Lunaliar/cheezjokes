@@ -114,6 +114,33 @@
     min-width: 100%;
   }
 }
+@media screen and (max-width: 73rem) {
+  html {
+    font-size: 14px;
+  }
+  .JokeList {
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100vh;
+  }
+  .JokeList-title {
+    font-size: 2.5rem;
+  }
+  .JokeList-sidebar {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    min-width: 100%;
+  }
+  .JokeList-getmore {
+    font-size: 1.4rem;
+    max-width: 25%;
+  }
+  .JokeList-jokes {
+    min-width: 100%;
+  }
+}
 
 @keyframes shake-slow {
   0% {
