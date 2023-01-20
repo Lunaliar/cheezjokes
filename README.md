@@ -1,6 +1,6 @@
 # Dad Joke Generator
 
-This is my Dad Joke Generator. I made it during a Colt Steele Udemy course on reacting. It was my first time making a react app, and it is still one of my favorite things I've ever made. Once I got more comfortable with react, I refactored it from class to functional components. 
+This is my Dad Joke Generator. I made it during a Colt Steele Udemy course on react. It was my first time making a react app, and it is still one of my favorite things I've ever made. Once I got more comfortable with react, I refactored it from class to functional components. 
 Warning! Use caution when sharing these jokes; they can be very "d[e]adly."
 
 
